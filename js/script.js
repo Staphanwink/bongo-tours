@@ -146,3 +146,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+// SnapWidget Popup Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const trigger = document.querySelector('.snapwidget-trigger');
+    const popup = document.querySelector('.snapwidget-popup');
+    const closeBtn = document.querySelector('.close-popup');
+    
+    // Open popup
+    trigger.addEventListener('click', function() {
+        popup.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+    
+    // Close popup
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close when clicking outside
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
