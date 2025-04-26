@@ -190,7 +190,7 @@ ul {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), url('../images/hero-bg.jpg')) no-repeat center center/cover;
     color: var(--white);
     display: flex;
     align-items: center;
