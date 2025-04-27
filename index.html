@@ -325,22 +325,6 @@
         </div>
     </section>
 
-    <!-- Facebook Page Plugin -->
-<div class="fb-page" 
-data-href="https://www.facebook.com/61575506289329" 
-data-tabs="timeline" 
-data-width="340" 
-data-height="500" 
-data-small-header="false" 
-data-adapt-container-width="true" 
-data-hide-cover="false" 
-data-show-facepile="true">
-</div>
-
-<!-- Load Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
-
  
     <section class="testimonials section-padding" id="testimonials">
         <div class="container">
@@ -377,59 +361,84 @@ data-show-facepile="true">
           </div>
         </div>
       </section>
-
-    <!-- Contact Section -->
-    <section class="contact section-padding" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Ceylonka Tours</h2>
-                <p>Start your Sri Lanka journey with us today</p>
+<!-- Contact Section -->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Ceylonka Tours</h2>
+        <p>Start your Sri Lanka journey with us today</p>
+      </div>
+  
+      <div class="contact-content" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        
+        <!-- Left Column -->
+        <div class="left-side" style="flex: 1; min-width: 300px;">
+          <div class="contact-info">
+            <h3>CEYLONKA TOURS OFFICE</h3>
+            <p><i class="fas fa-map-marker-alt"></i> No 328/1A Track 05 Jayanthipura, Sri Lanka</p>
+            <p><i class="fas fa-clock"></i> Sun – Sat 06:30AM-10:30PM</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+94713061878">+94 71 306 1878</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@ceylonkatours.com">info@ceylonkatours.com</a></p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61575506289329" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/ceylonka_tours/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/94713061878" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>CEYLONKA TOURS OFFICE</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> No 328/1A Track 05 Jayanthipura, Sri Lanka</p>
-                    <p><i class="fas fa-clock"></i> Sun – Sat 06:30AM-10:30PM</p>
-                    <p><i class="fas fa-phone"></i> +94 71 306 1878</p>
-                    <p><i class="fas fa-envelope"></i> info@ceylonkatours.com</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Ceylonka Tours on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Ceylonka Tours on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Ceylonka Tours on TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
-                        <a href="https://wa.me/94713061878" target="_blank" aria-label="Chat with Ceylonka Tours on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Book Your Sri Lanka Tour</h3>
-                    <form id="bookingForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Your Phone">
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Select Sri Lanka Tour</option>
-                                <option>Ancient City Day Tour</option>
-                                <option>10 Days Sri Lanka Classic</option>
-                                <option>Sri Lanka Nature Tour</option>
-                                <option>Sri Lanka Safari Adventure</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Submit Booking Request</button>
-                    </form>
-                </div>
-            </div>
+          </div>
+  
+          <!-- Facebook Page Plugin (below contact-info) -->
+          <div class="fb-page" 
+            data-href="https://www.facebook.com/61575506289329" 
+            data-tabs="timeline" 
+            data-width="500" 
+            data-height="200" 
+            data-small-header="false" 
+            data-adapt-container-width="true" 
+            data-hide-cover="false" 
+            data-show-facepile="true"
+            style="margin-top: 1rem;">
+          </div>
         </div>
-    </section>
-
+  
+        <!-- Right Column -->
+        <div class="right-side" style="flex: 1; min-width: 300px;">
+          <div class="contact-form">
+            <h3>Book Your Sri Lanka Tour</h3>
+            <form id="bookingForm">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Phone">
+              </div>
+              <div class="form-group">
+                <select name="tour" required>
+                  <option value="">Select Sri Lanka Tour</option>
+                  <option value="Ancient City Day Tour">Ancient City Day Tour</option>
+                  <option value="10 Days Sri Lanka Classic">10 Days Sri Lanka Classic</option>
+                  <option value="Sri Lanka Nature Tour">Sri Lanka Nature Tour</option>
+                  <option value="Sri Lanka Safari Adventure">Sri Lanka Safari Adventure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn">Submit Booking Request</button>
+            </form>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Load Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+  </section>
+  
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
