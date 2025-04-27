@@ -210,7 +210,7 @@ html {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
-                url('../images/1.jng') no-repeat center center/cover;
+                url('../images/1.jpg') no-repeat center center/cover;
     height: 100vh;
     min-height: 700px;
     display: flex;
